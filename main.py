@@ -11,8 +11,7 @@ reverse_word_index = {value: key for key, value in word_index.items()}
 
 #Load the pretrained model with relu activation
 
-model = load_model('simple_rnn_imdb.h5')
-
+model = load_model('simple_rnn_imdb.h5', compile=False)
 
 #Function to preprocess user input 
 
